@@ -1,4 +1,4 @@
-mod models;
+mod ui;
 
 fn main() {
     MainWindow::new().unwrap().run().unwrap();
@@ -6,10 +6,5 @@ fn main() {
 
 
 slint::slint! {
-    export component MainWindow inherits Window {
-        Text {
-            text: "hello world";
-            color: red;
-        }
-    }
+    import {MainWindow} from "src/ui/main_window.slint";
 }

@@ -1,0 +1,28 @@
+import { VerticalBox, Button, HorizontalBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    VerticalBox {
+        Text {
+            text: "Welcome";
+            font-size: 40px;
+            horizontal-alignment: TextHorizontalAlignment.center;
+            font-weight: 900;
+        }
+
+        HorizontalBox {
+            
+            Button {
+                text: "New Board";
+                primary: true;
+                preferred-width: 30px;
+            }
+
+            Button {
+                text: "About";
+                preferred-width: 30px;
+            }
+        }
+
+    }
+}
+
